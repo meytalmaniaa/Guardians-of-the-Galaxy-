@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- ESTILOS GENERALES --- */
+h1 {
+    color: #9F00FF;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 25px;
+}
+
+h2 {
+    color: #9F00FF;
+    font-family: "Montserrat", sans-serif;
+}
+h3 {
+    color: #9F00FF;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+}
+
+.logo-link {
+    height: 100px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0px 5px rgba(0,0,0,0.1));
+}
+
+.logo-link img:hover {
+    transform: scale(1.15);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 5px;
+}
+
+nav a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: block;
+    transition: 0.3s; /* Agregué esto para que el hover sea suave */
+}
+
+nav a:hover {
+    background-color: #ffd700;
+    transform: scale(1.10);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+body {
+   background-image: url('../assests/backgrounds/milano40.png');
+}
+
+section p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+main img {
+    max-width: 90%;         
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.rocket-img{
+        max-width: 90%;         
+        height: auto;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* --- MEDIA QUERY (SIEMPRE AL FINAL) --- */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Apila los botones en vertical */
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav li {
+        margin: 0; /* Quitamos margen lateral en móvil */
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%; /* Botones de ancho completo para facilitar el clic */
+    }
+
+    .logo-link {
+        height: 70px; /* Logo más pequeño en móvil */
+    }
+}
+
+
+/* Movie Section*/
+.header{
+    background-color: chocolate;
+    height: 10vh;
+
+    display: grid;
+    grid-template-columns: 1fr, 2fr, 3fr
+}
